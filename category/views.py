@@ -2,10 +2,10 @@
 
 from flask import Blueprint
 
-admin = Blueprint('admin', __name__)
+category = Blueprint('category', __name__)
 
 
-@admin.route('/')
+@category.route('/')
 def index():
     return "kasakei"
 

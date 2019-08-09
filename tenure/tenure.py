@@ -3,10 +3,10 @@
 from manage import orm
 
 
-class Admin(orm.Model):
+class Tenure(orm.Model):
     id = orm.Column(orm.Integer(12), primary_key=True)
-    username = orm.Column(orm.String(24), unique=True, nullable=False)
-    password = orm.Column(orm.String(24), nullable=False)
+    author_id = orm.Column(orm.Integer(11), nullable=False)
+    organization_id = orm.Column(orm.Integer(11), nullable=False)
     create_at = orm.Column(orm.TIMESTAMP, nullable=False)
     update_at = orm.Column(orm.TIMESTAMP, nullable=False)
 
