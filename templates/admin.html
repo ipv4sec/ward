@@ -10,16 +10,65 @@
             <li class="active">管理员</li>
         </ul>
 
-
-
         <div>
             <hr />
             <h4><strong>修改密码</strong></h4>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-6">
+
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputOldPassword" class="col-lg-2 control-label">旧密码</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputOldPassword" placeholder="Old Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNewPassword" class="col-lg-2 control-label">新密码</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputNewPassword" placeholder="New Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> 确认修改</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div>
             <hr />
             <h4><strong>添加管理员</strong></h4>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-6">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputNewAdminUsername" class="col-lg-2 control-label">用户名</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputNewAdminUsername" placeholder="New Admin Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNewAdminPassword" class="col-lg-2 control-label">密码</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputNewAdminPassword" placeholder="New Admin Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> 确认添加</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
