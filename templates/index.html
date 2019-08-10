@@ -1,0 +1,95 @@
+
+{% include "/header.html" %}
+
+
+<div class="navbar navbar-default navbar-fixed-top" style="">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">化工大数据</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="margin-top: 80px">
+        <div class="col-lg-6">
+            <div class="form-horizontal" >
+                <div class="form-group">
+                    <label for="inputUsername" class="col-lg-2 control-label">用户名</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">密码</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary" onclick="login()">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 登录
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% include "scripts.html" %}
+<script>
+    $(document).keydown(function (event) {
+        if (event.keyCode === 13) {
+            login();
+        }
+    });
+    function login() {
+        // if ($("#inputUsername").val().trim() === "") {
+        //     return $.notify({
+        //         title: '<strong>填写错误</strong>',
+        //         message: '用户名为空, 请填写用户名'
+        //     },{
+        //         type: 'warning'
+        //     });
+        // }
+        // if ($("#inputPassword").val().trim() === "") {
+        //     return $.notify({
+        //         title: '<strong>填写错误</strong>',
+        //         message: '密码为空, 请填写密码名'
+        //     },{
+        //         type: 'warning'
+        //     });
+        // }
+        window.location.href="dashboard/";
+        // TODO
+        // $.ajax({
+        //     url: '/',
+        //     type: "POST",
+        //     contentType: "application/json;charset=utf-8",
+        //     data: JSON.stringify({
+        //         "username": $("#inputUsername").val().trim(),
+        //         "password": $("#inputPassword").val().trim()
+        //     }),
+        //     dataType: "json",
+        //     success: function(result){
+        //         if (result["code"] !== 10200) {
+        //             return $.notify({
+        //                 title: '<strong>登录出错</strong>',
+        //                 message: result["msg"]
+        //             },{
+        //                 type: 'danger'
+        //             });
+        //         } else {
+        //             window.location.href="dashboard/";
+        //         }
+        //     }
+        // });
+    }
+</script>
+</body>
+</html>
+
