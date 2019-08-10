@@ -7,5 +7,5 @@ admin = Blueprint('admin', __name__)
 
 @admin.route('/')
 def index():
-    return render_template("dashboard/dashboard.html")
+    return "kasakei"
 
